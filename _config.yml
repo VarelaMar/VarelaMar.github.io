@@ -1,6 +1,6 @@
+theme: jekyll-theme-cayman
 title: VarelaMar Website
 description: Exploring intercultural communication and digital literacy
-theme: jekyll-theme-cayman
 
 include:
   - home.html
