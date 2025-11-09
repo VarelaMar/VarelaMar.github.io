@@ -11,6 +11,16 @@ title: Welcome Page
     <p><em>A showcase of research, writing, and projects.</em></p>
   </header>
 
+  <!-- Professional Photo -->
+  <section style="text-align: center; margin-bottom: 2rem;">
+    <h2>About Me</h2>
+    <p><em>Add a professional photo here.</em></p>
+    <img src="{{ '/assets/images/professional_photo.jpg' | relative_url }}" 
+         alt="Marisa Varela" 
+         style="width:200px; height:auto; border-radius:50%; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-top: 1rem;">
+    <p style="margin-top: 1rem;">Brief description about yourself, your expertise, or your writing focus.</p>
+  </section>
+
   <!-- Intro / Overview -->
   <section style="margin-bottom: 2rem;">
     <p>
@@ -22,11 +32,11 @@ title: Welcome Page
   <section style="margin-bottom: 2rem;">
     <h2>Portfolio Sections</h2>
     <ul>
-      <li><a href="{{ '/glossary.html' | relative_url }}">Glossary</a> — A collection communication and technical writing.</li>
-      <li><a href="{{ '/cultureandtranslation.html' | relative_url }}">Learning About Cultures and Translation</a> — Essays and projects </li>
-      <li><a href="{{ '/digitalliteracyandrhetoric.html' | relative_url }}">Digital Literacy and Rhetoric</a> Blank Framework </li>
-      <li><a href="{{ '/rhetoric.html' | relative_url }}">Rhetoric</a> Blank Framework</li>
-      <li><a href="{{ '/workcited.html' | relative_url }}">Works Cited</a> Blank Framework</li>
+      <li><a href="{{ '/glossary.html' | relative_url }}">Glossary</a> — A collection of key terms for communication and technical writing.</li>
+      <li><a href="{{ '/cultureandtranslation.html' | relative_url }}">Learning About Cultures and Translation</a> — Essays and projects exploring translation, localization, and intercultural communication.</li>
+      <li><a href="{{ '/digitalliteracyandrhetoric.html' | relative_url }}">Digital Literacy and Rhetoric</a> — Blank framework for showcasing digital writing and hypertext projects.</li>
+      <li><a href="{{ '/rhetoric.html' | relative_url }}">Rhetoric</a> — Blank framework for rhetorical analysis and writing projects.</li>
+      <li><a href="{{ '/workcited.html' | relative_url }}">Works Cited</a> — Blank framework for your references and citations.</li>
     </ul>
   </section>
 
@@ -36,9 +46,9 @@ title: Welcome Page
     <ul>
       <li><strong>Page title:</strong> Change the <code>title</code> in the front matter at the top of this file.</li>
       <li><strong>Header text:</strong> Replace your name and description in the <code>&lt;header&gt;</code> block.</li>
+      <li><strong>Professional photo:</strong> Replace <code>professional_photo.jpg</code> with your own photo in <code>assets/images</code>.</li>
       <li><strong>Portfolio links:</strong> Add or remove <code>&lt;li&gt;</code> items in the "Portfolio Sections" list as you create new pages.</li>
-      <li><strong>Section descriptions:</strong> Update the short text under each link to explain what visitors will find.</li>
-      <li><strong>Images:</strong> If desired, you can add images above, below, or next to each section using the assets folder and <code>&lt;img src="{{ '/assets/images/filename.jpg' | relative_url }}"&gt;</code>.</li>
+      <li><strong>Section descriptions:</strong> Update the text under each link to explain what visitors will find.</li>
     </ul>
   </section>
 
