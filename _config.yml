@@ -1,6 +1,6 @@
 title: VarelaMar Website
 description: Intercultural Communication and Hypertext
-theme: jekyll-theme-cayman
+=theme: pages-themes/minimal@v0.2.0
 
 include:
   - home.html
