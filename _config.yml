@@ -3,4 +3,7 @@ description: Intercultural Communication and Hypertext
 remote_theme: pages-themes/cayman@v0.2.0
 include:
   - home.html
+  - glossary.html
+  - rhetoric.html
+  - workcited.html
   - assets
