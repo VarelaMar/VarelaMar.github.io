@@ -5,61 +5,46 @@ title: Home
 
 <main class="page-content" style="max-width: 900px; margin: auto; padding: 2rem; line-height: 1.7; font-size: 1rem;">
 
+  <!-- Header -->
   <header style="text-align: center; margin-bottom: 2rem;">
-    <h1>Intercultural Communication and Hypertext</h1>
-    <p><em>Exploring digital literacy, rhetoric, and language in a globalized world</em></p>
+    <h1>Marisa Varela Portfolio</h1>
+    <p><em>A showcase of research, writing, and projects in intercultural communication, rhetoric, and digital literacy.</em></p>
   </header>
 
-  <section>
-    <h2>Welcome</h2>
+  <!-- Intro / Overview -->
+  <section style="margin-bottom: 2rem;">
     <p>
-      This site explores <strong>intercultural communication</strong> and <em>hypertext theory</em>.
-      Use the navigation links below to explore topics related to communication across cultures,
-      digital literacy, and rhetoric.
+      Welcome to my portfolio! Here, you can explore my work across several categories of writing and research. Click the links below to navigate to each section:
     </p>
+  </section>
 
+  <!-- Portfolio Links -->
+  <section style="margin-bottom: 2rem;">
+    <h2>Portfolio Sections</h2>
     <ul>
-      <li><a href="glossary.html">Glossary</a></li>
-      <li><a href="rhetoric.html">Rhetoric</a></li>
-      <li><a href="digitalliteracyandrhetoric.html">Digital Literacy and Rhetoric</a></li>
-      <li><a href="workcited.html">Works Cited</a></li>
+      <li><a href="{{ '/glossary.html' | relative_url }}">Glossary</a> — A collection of key concepts and terms related to intercultural communication and technical writing.</li>
+      <li><a href="{{ '/cultureandtranslation.html' | relative_url }}">Learning About Cultures and Translation</a> — Essays and projects exploring translation, localization, and cultural considerations in writing.</li>
+      <li><a href="{{ '/digitalliteracyandrhetoric.html' | relative_url }}">Digital Literacy and Rhetoric</a> — Papers and examples of hypertext, digital literacy, and online writing practices.</li>
+      <li><a href="{{ '/rhetoric.html' | relative_url }}">Rhetoric</a> — Analysis of persuasive writing, intercultural rhetoric, and technical communication strategies.</li>
+      <li><a href="{{ '/workcited.html' | relative_url }}">Works Cited</a> — References, citations, and bibliographic resources for the portfolio.</li>
     </ul>
   </section>
 
-  <hr style="margin: 2rem 0;">
-
-  <section>
-    <h2>Introduction to Intercultural Communication and Hypertext</h2>
-
-    <p>
-      As we continue to globalize the field of technical communication, we must study the ways we learn about new cultures and languages through our audiences, and how digital literacy and rhetoric play roles in communication across hypertext.
-    </p>
-
-    <blockquote style="font-style: italic; border-left: 3px solid #888; padding-left: 1rem; color: #555;">
-      “Understanding and appreciating other cultures is just one step necessary for succeeding in effective international or intercultural communication.”
-    </blockquote>
-
-    <p>
-      This site also discusses the role of hypertext in teaching and learning about new languages and cultures. Learning about a people and their language is one of many steps necessary for successful international communication.
-    </p>
-
-    <div style="margin-top: 2rem;">
-      <p>
-        <strong><a href="cultureandtranslation.html">Learning About Cultures, Translation, and Teaching a New Language</a>:</strong>
-        Teaching students about other languages and cultures, as well as how to write for translation, are all important factors for international technical communication.
-      </p>
-
-      <p>
-        <strong><a href="digitalliteracyandrhetoric.html">Digital Literacy and Rhetoric</a>:</strong>
-        Digital literacy and rhetoric vary between borders and languages. It’s important to understand how to navigate these differences when communicating interculturally.
-      </p>
-    </div>
+  <!-- How to Edit / Customize -->
+  <section style="margin-top: 3rem; background-color: #f8f8f8; padding: 1rem; border-radius: 8px;">
+    <h2>How to Customize This Page</h2>
+    <ul>
+      <li><strong>Page title:</strong> Change the <code>title</code> in the front matter at the top of this file.</li>
+      <li><strong>Header text:</strong> Replace your name and description in the <code>&lt;header&gt;</code> block.</li>
+      <li><strong>Portfolio links:</strong> Add or remove <code>&lt;li&gt;</code> items in the "Portfolio Sections" list as you create new pages.</li>
+      <li><strong>Section descriptions:</strong> Update the short text under each link to explain what visitors will find.</li>
+      <li><strong>Images:</strong> If desired, you can add images above, below, or next to each section using the assets folder and <code>&lt;img src="{{ '/assets/images/filename.jpg' | relative_url }}"&gt;</code>.</li>
+    </ul>
   </section>
 
+  <!-- Footer -->
   <footer style="margin-top:3rem; text-align:center; font-size:0.85em; color:#777;">
-    <p>&copy; 2021 Marisa Varela. All rights reserved.</p>
+    <p>&copy; 2025 Marisa Varela. All rights reserved.</p>
   </footer>
 
 </main>
-
-<script src="assets/js/script.js"></script>
