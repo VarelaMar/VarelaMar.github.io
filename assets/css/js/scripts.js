@@ -1,0 +1,3 @@
+<link rel="stylesheet" href="assets/css/style.css">
+<img src="assets/images/homepage.jpg" alt="HTML code">
+<script src="assets/js/script.js"></script>
