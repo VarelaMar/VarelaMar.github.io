@@ -1,10 +1,10 @@
 title: VarelaMar Website
-description: My GitHub Pages site with Cayman theme
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
+description: Exploring intercultural communication and digital literacy
+theme: jekyll-theme-cayman
+
 include:
   - home.html
   - glossary.html
-  - workcited.html
+  - workscited.html
   - rhetoric.html
   - assets/
