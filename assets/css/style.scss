@@ -5,39 +5,55 @@
 :root {
   --pastel-purple: #c7a6ff;    /* header gradient start */
   --pastel-pink: #ffb7d5;      /* header gradient end */
-  --text-dark: #5a4a67;        /* general text */
-  --page-bg: #faf5ff;          /* solid page background */
-  --link-color: #9e7cc1;        /* solid link color */
-  --link-hover: #7a5fa3;        /* link hover color */
-  --footer-bg: rgba(158, 124, 193, 0.7); /* translucent lavender */
+  --text-dark: #5a4a67;        /* body text */
+  --header-text: #ffffff;      /* header text on gradient */
+  --section-header: #7a5fa3;   /* deep lavender for h2 */
+  --page-bg: #faf5ff;          /* page background */
+  --link-color: #9e7cc1;        /* medium lavender links */
+  --link-hover: #6d4fa6;        /* richer purple on hover */
+  --footer-bg: rgba(158, 124, 193, 0.7); /* translucent lavender footer */
 }
 
-/* -----------------------------
+/* ==========================
    BODY / PAGE BACKGROUND
-   ----------------------------- */
+   ========================== */
 body {
   background-color: var(--page-bg) !important;
   color: var(--text-dark);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* -----------------------------
-   HEADER ONLY — GRADIENT
-   ----------------------------- */
+/* ==========================
+   HEADER — GRADIENT
+   ========================== */
 .page-header {
   background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
-  color: white !important;
+  color: var(--header-text) !important;
   border-bottom: none !important;
   padding: 3.5rem 1rem !important;
+  text-align: center;
 }
 
+.page-header h1,
 .page-header .project-name,
 .page-header .project-tagline {
-  color: white !important;
+  color: var(--header-text) !important;
+  margin: 0;
 }
 
-/* -----------------------------
-   LINKS — SOLID COLORS
-   ----------------------------- */
+/* ==========================
+   SECTION HEADERS (h2)
+   ========================== */
+h2 {
+  color: var(--section-header) !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ==========================
+   LINKS
+   ========================== */
 a {
   color: var(--link-color) !important;
   font-weight: 500;
@@ -48,9 +64,9 @@ a:hover {
   color: var(--link-hover) !important;
 }
 
-/* -----------------------------
+/* ==========================
    CONTENT BOX / CARD STYLE
-   ----------------------------- */
+   ========================== */
 .page-content {
   background: white !important;
   border-radius: 12px;
@@ -59,36 +75,31 @@ a:hover {
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
-/* Section headers */
-h2 {
-  color: var(--text-dark);
-}
-
 /* Optional horizontal lines */
 hr {
   border-color: var(--link-color) !important;
 }
 
-/* -----------------------------
+/* ==========================
    FOOTER — TRANSLUCENT INCLUDING GITHUB GENERATOR LINE
-   ----------------------------- */
+   ========================== */
 footer,
 .site-generator {
   background-color: var(--footer-bg) !important; /* translucent lavender */
-  color: white !important;
+  color: var(--header-text) !important; /* white text */
   text-align: center;
   padding: 1.2rem 0;
-  backdrop-filter: blur(6px);  /* soft glass effect */
+  backdrop-filter: blur(6px);  /* glass effect */
   margin: 0;
   border-top: none !important;
 }
 
 /* Generator line links */
 .site-generator a {
-  color: white !important;
+  color: var(--header-text) !important;
   text-decoration: underline;
 }
 
 .site-generator a:hover {
-  color: #e0c7ff !important; /* slightly lighter on hover */
+  color: #e0c7ff !important; /* lighter lavender on hover */
 }
