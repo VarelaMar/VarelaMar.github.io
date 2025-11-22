@@ -6,16 +6,12 @@ title: Welcome Page
 <main class="page-content" style="max-width: 900px; margin: auto; padding: 2rem; line-height: 1.7; font-size: 1rem;">
 
   <!-- Header -->
-  <header style="text-align: center; margin-bottom: 1rem;">
+  <header style="text-align: center; margin-bottom: 2rem;">
     <h1>Marisa Varela</h1>
   </header>
 
-  <!-- Intro Text (formerly above the About section) -->
-  <section style="text-align: center; margin-bottom: 2rem;">
-  </section>
-
-  <!-- About Me Section (now placed here) -->
-  <section style="text-align: center; margin-bottom: 2.5rem;">
+  <!-- About Me Section -->
+  <section style="text-align: center; margin-bottom: 3rem;">
     <h2>About Me</h2>
     <img src="{{ '/assets/images/professional_photo.jpg' | relative_url }}" 
          alt="Marisa Varela" 
@@ -23,37 +19,40 @@ title: Welcome Page
     <p style="margin-top: 1rem;">About Section</p>
   </section>
 
-  <!-- Centered Portfolio Links -->
-  <section style="margin-bottom: 3rem; text-align: center;">
+  <!-- Resume Section -->
+  <section style="text-align: center; margin-bottom: 4rem;">
+    <h2>Resume</h2>
     <ul style="list-style: none; padding: 0; margin-top: 1rem; line-height: 2;">
       <li>
         <a href="{{ '/resume.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
-          Resume
-        </a><br>
+          View Resume
+        </a>
       </li>
+    </ul>
+  </section>
 
-      <li>
-        <a href="{{ '/writingSamples.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
-          Writing Samples
-        </a><br>
-      </li>
+  <!-- Writing Samples Section -->
+  <section style="text-align: center; margin-bottom: 4rem; margin-top: 2rem;">
+    <h2>Writing Samples</h2>
 
+    <!-- Sub-tabs under Writing Samples -->
+    <ul style="list-style: none; padding: 0; margin-top: 1.5rem; line-height: 2;">
       <li>
         <a href="{{ '/academicWriting.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
           Academic Writing
-        </a><br>
+        </a>
       </li>
 
       <li>
         <a href="{{ '/publishedWorks.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
           Professional / Published Works
-        </a><br>
+        </a>
       </li>
 
       <li>
         <a href="{{ '/infographics.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
           Infographics
-        </a><br>
+        </a>
       </li>
     </ul>
   </section>
