@@ -3,11 +3,13 @@
 
 @import "{{ site.theme }}";
 :root {
-  --pastel-purple: #c7a6ff;    /* light purple */
-  --pastel-pink: #ffb7d5;      /* soft pink */
-  --text-dark: #5a4a67;
-  --page-bg: #faf5ff;          /* very light lavender */
-  --link-hover: #b08ce0;       /* deeper lavender */
+  --pastel-purple: #c7a6ff;    /* light purple for header */
+  --pastel-pink: #ffb7d5;      /* pink for header */
+  --text-dark: #5a4a67;        /* dark text */
+  --page-bg: #faf5ff;           /* solid page background */
+  --link-color: #9e7cc1;        /* solid link color */
+  --link-hover: #7a5fa3;        /* solid hover color */
+  --footer-bg: #9e7cc1;         /* solid footer background */
 }
 
 /* Page background */
@@ -16,9 +18,9 @@ body {
   color: var(--text-dark);
 }
 
-/* ---------------------------------------------
-   HEADER — Replace Cayman gradient with pastel
-   --------------------------------------------- */
+/* -----------------------------
+   HEADER ONLY — gradient
+   ----------------------------- */
 .page-header {
   background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
   color: white !important;
@@ -31,32 +33,33 @@ body {
   color: white !important;
 }
 
-/* ---------------------------------------------
-   LINKS (soft purple/pink theme)
-   --------------------------------------------- */
+/* -----------------------------
+   LINKS — solid colors only
+   ----------------------------- */
 a {
-  color: var(--pastel-purple) !important;
+  color: var(--link-color) !important;
   font-weight: 500;
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--link-hover) !important;
 }
 
-/* ---------------------------------------------
-   FOOTER — matching gradient
-   --------------------------------------------- */
+/* -----------------------------
+   FOOTER — solid color only
+   ----------------------------- */
 footer {
-  background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
+  background-color: var(--footer-bg) !important; /* solid color */
   color: white !important;
   padding: 1.2rem 0;
   text-align: center;
   border-top: none !important;
 }
 
-/* ---------------------------------------------
-   CONTENT BOX / CARD STYLING
-   --------------------------------------------- */
+/* -----------------------------
+   CONTENT BOX / CARD
+   ----------------------------- */
 .page-content {
   background: white !important;
   border-radius: 12px;
@@ -65,12 +68,12 @@ footer {
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
-/* Optional: style section headers */
+/* Section headers */
 h2 {
   color: var(--text-dark);
 }
 
-/* Optional: soften horizontal lines */
+/* Optional horizontal lines */
 hr {
-  border-color: var(--pastel-purple) !important;
+  border-color: var(--link-color) !important;
 }
