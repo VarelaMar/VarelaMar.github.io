@@ -11,40 +11,62 @@ title: Welcome Page
     <p><em>A showcase of research, writing, and projects.</em></p>
   </header>
 
-  <!-- Professional Photo -->
-  <section style="text-align: center; margin-bottom: 2rem;">
+  <!-- About Section -->
+  <section style="text-align: center; margin-bottom: 2.5rem;">
     <h2>About Me</h2>
-    <p><em>Add a professional photo here.</em></p>
     <img src="{{ '/assets/images/professional_photo.jpg' | relative_url }}" 
          alt="Marisa Varela" 
          style="width:200px; height:auto; border-radius:50%; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-top: 1rem;">
     <p style="margin-top: 1rem;">Brief description about yourself.</p>
   </section>
 
-  <!-- Intro / Overview -->
-  <section style="margin-bottom: 2rem;">
-    <p>
-      Welcome to my portfolio. Click the links below to navigate to each section:
-    </p>
-  </section>
+  <!-- Centered Portfolio Links -->
+  <section style="margin-bottom: 3rem; text-align: center;">
+    <h2>Portfolio Sections</h2>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; line-height: 2;">
+      <li>
+        <a href="{{ '/glossary.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
+          Glossary
+        </a><br>
+        <small>Communication and technical writing.</small>
+      </li>
 
-  <!-- Portfolio Links -->
-  <section style="margin-bottom: 2rem;">
-    <ul>
-      <li><a href="{{ '/glossary.html' | relative_url }}">Glossary</a> — communication and technical writing.</li>
-      <li><a href="{{ '/cultureandtranslation.html' | relative_url }}">Learning About Cultures and Translation</a> — Essays and projects.</li>
-      <li><a href="{{ '/digitalliteracyandrhetoric.html' | relative_url }}">Digital Literacy and Rhetoric</a> — Blank framework. </li>
-      <li><a href="{{ '/rhetoric.html' | relative_url }}">Rhetoric</a> — Blank framework.</li>
-      <li><a href="{{ '/workcited.html' | relative_url }}">Works Cited</a> — Blank framework.</li>
+      <li>
+        <a href="{{ '/cultureandtranslation.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
+          Learning About Cultures and Translation
+        </a><br>
+        <small>Essays and projects.</small>
+      </li>
+
+      <li>
+        <a href="{{ '/digitalliteracyandrhetoric.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
+          Digital Literacy and Rhetoric
+        </a><br>
+        <small>Blank framework.</small>
+      </li>
+
+      <li>
+        <a href="{{ '/rhetoric.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
+          Rhetoric
+        </a><br>
+        <small>Blank framework.</small>
+      </li>
+
+      <li>
+        <a href="{{ '/workcited.html' | relative_url }}" style="text-decoration: none; color:#0066cc;">
+          Works Cited
+        </a><br>
+        <small>Blank framework.</small>
+      </li>
     </ul>
   </section>
 
   <!-- How to Edit / Customize -->
-  <section style="margin-top: 3rem; background-color: #f8f8f8; padding: 1rem; border-radius: 8px;">
+  <section style="background-color: #f8f8f8; padding: 1.5rem; border-radius: 8px;">
     <h2>How to Customize This Page</h2>
     <ul>
-      <li><strong>Page title:</strong> Change the <code>title</code> in the front matter at the top of this file.</li>
-      <li><strong>Portfolio links:</strong> Add or remove <code>&lt;li&gt;</code> items in the "Portfolio Sections" list as you create new pages.</li>
+      <li><strong>Page title:</strong> Change the <code>title</code> in the front matter.</li>
+      <li><strong>Portfolio links:</strong> Edit the list above.</li>
     </ul>
   </section>
 
