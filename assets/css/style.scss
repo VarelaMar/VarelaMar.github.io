@@ -3,5 +3,23 @@
 
 @import "{{ site.theme }}";
 :root {
-  --cayman: #e673a3;
+  --cayman-primary: #9e7cc1;
+}
+
+body {
+  background-color: #f6f1fa !important;
+}
+
+.page-header {
+  background-color: #9e7cc1 !important;
+  color: white !important;
+}
+
+a {
+  color: #9e7cc1 !important;
+}
+
+footer {
+  background-color: #9e7cc1 !important;
+  color: white !important;
 }
