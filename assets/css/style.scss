@@ -49,15 +49,26 @@ a:hover {
 /* -----------------------------
    FOOTER — solid color only
    ----------------------------- */
-footer {
-  background-color: var(--footer-bg) !important; /* translucent lavender */
+footer,
+.site-generator {
+  background-color: rgba(158, 124, 193, 0.7) !important; /* translucent lavender */
   color: white !important;
   text-align: center;
   padding: 1.2rem 0;
-  border-top: none !important;
   backdrop-filter: blur(6px);  /* soft glass effect */
+  margin: 0;
+  border-top: none !important;
 }
 
+/* Ensure generator text uses same color */
+.site-generator a {
+  color: white !important;
+  text-decoration: underline;
+}
+
+.site-generator a:hover {
+  color: #e0c7ff !important; /* slightly lighter on hover */
+}
 /* -----------------------------
    CONTENT BOX / CARD
    ----------------------------- */
