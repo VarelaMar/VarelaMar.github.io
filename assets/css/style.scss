@@ -3,26 +3,27 @@
 
 @import "{{ site.theme }}";
 :root {
-  --lavender-main: #9e7cc1;  /* Soft lavender */
-  --lavender-dark: #7a5fa3;  /* Hover shade */
-  --lavender-light-bg: #f6f1fa; /* Page background */
+  --pastel-purple: #c7a6ff;    /* light purple */
+  --pastel-pink: #ffb7d5;      /* soft pink */
+  --text-dark: #5a4a67;
+  --page-bg: #faf5ff;          /* very light lavender */
+  --link-hover: #b08ce0;       /* deeper lavender */
 }
 
 /* Page background */
 body {
-  background-color: var(--lavender-light-bg) !important;
+  background-color: var(--page-bg) !important;
+  color: var(--text-dark);
 }
 
-/* ----------------------
-   HEADER OVERRIDE
-   Remove Cayman gradient
-   ---------------------- */
+/* ---------------------------------------------
+   HEADER — Replace Cayman gradient with pastel
+   --------------------------------------------- */
 .page-header {
-  background: var(--lavender-main) !important;   /* solid lavender */
-  background-image: none !important;             /* remove green/blue gradient */
+  background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
   color: white !important;
-  padding: 3rem 1rem !important;
   border-bottom: none !important;
+  padding: 3.5rem 1rem !important;
 }
 
 .page-header .project-name,
@@ -30,36 +31,46 @@ body {
   color: white !important;
 }
 
-/* ----------------------
-   LINKS
-   ---------------------- */
+/* ---------------------------------------------
+   LINKS (soft purple/pink theme)
+   --------------------------------------------- */
 a {
-  color: var(--lavender-main) !important;
-  text-decoration: none;
+  color: var(--pastel-purple) !important;
+  font-weight: 500;
 }
 
 a:hover {
-  color: var(--lavender-dark) !important;
+  color: var(--link-hover) !important;
 }
 
-/* ----------------------
-   FOOTER
-   ---------------------- */
+/* ---------------------------------------------
+   FOOTER — matching gradient
+   --------------------------------------------- */
 footer {
-  background-color: var(--lavender-main) !important;
+  background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
   color: white !important;
+  padding: 1.2rem 0;
   text-align: center;
-  padding: 1rem 0;
   border-top: none !important;
 }
 
-/* ----------------------
-   CONTENT CARD STYLE
-   ---------------------- */
+/* ---------------------------------------------
+   CONTENT BOX / CARD STYLING
+   --------------------------------------------- */
 .page-content {
   background: white !important;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+/* Optional: style section headers */
+h2 {
+  color: var(--text-dark);
+}
+
+/* Optional: soften horizontal lines */
+hr {
+  border-color: var(--pastel-purple) !important;
 }
