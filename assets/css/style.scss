@@ -34,12 +34,11 @@ body {
   text-align: center;
 }
 
-/* Force all H1 in header to white */
 .page-header h1,
 .page-header .project-name,
 .page-header .project-tagline,
 header h1 {
-  color: var(--header-text) !important;
+  color: #7a5fa3 !important; /* deep lavender, same as h2 */
   margin: 0;
 }
 
