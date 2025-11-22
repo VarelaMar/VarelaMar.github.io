@@ -86,21 +86,21 @@ hr {
    ========================== */
 footer,
 .site-generator {
-  background-color: var(--footer-bg) !important; /* translucent lavender */
-  color: var(--header-text) !important; /* white text */
+  background: linear-gradient(135deg, #b17aff, #ff88c8) !important; /* more dramatic purple → pink */
+  color: #ffffff !important; /* white text for contrast */
   text-align: center;
-  padding: 1.2rem 0;
-  backdrop-filter: blur(6px);  /* soft glass effect */
+  padding: 1.5rem 0;
+  backdrop-filter: blur(4px);  /* soft blur for glassy effect */
   margin: 0;
   border-top: none !important;
 }
 
 /* Generator line links */
 .site-generator a {
-  color: var(--header-text) !important;
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
 .site-generator a:hover {
-  color: #e0c7ff !important; /* lighter lavender on hover */
+  color: #ffd1f0 !important; /* lighter pink on hover */
 }
