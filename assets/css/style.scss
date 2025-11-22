@@ -49,12 +49,14 @@ a:hover {
 /* -----------------------------
    FOOTER — solid color only
    ----------------------------- */
+   ----------------------------- */
 footer {
-  background-color: var(--footer-bg) !important; /* solid color */
+  background-color: var(--footer-bg) !important; /* translucent lavender */
   color: white !important;
-  padding: 1.2rem 0;
   text-align: center;
+  padding: 1.2rem 0;
   border-top: none !important;
+  backdrop-filter: blur(6px);  /* soft glass effect */
 }
 
 /* -----------------------------
