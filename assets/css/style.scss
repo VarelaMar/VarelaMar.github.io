@@ -86,11 +86,11 @@ hr {
    ========================== */
 footer,
 .site-generator {
-  background: linear-gradient(135deg, #b17aff, #ff88c8) !important; /* more dramatic purple → pink */
+  background: linear-gradient(135deg, #c7a6ff, #ffb7d5) !important; /* same as header */
   color: #ffffff !important; /* white text for contrast */
   text-align: center;
   padding: 1.5rem 0;
-  backdrop-filter: blur(4px);  /* soft blur for glassy effect */
+  backdrop-filter: blur(4px);  /* subtle glass effect */
   margin: 0;
   border-top: none !important;
 }
