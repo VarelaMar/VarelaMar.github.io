@@ -4,7 +4,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 include:
   - index.html
   - resume.html
-  - rhetoric.html
+  - publishedWorks.html
   - workcited.html
   - assets
   - academicWriting.html
