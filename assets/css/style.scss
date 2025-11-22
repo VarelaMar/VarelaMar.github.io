@@ -3,23 +3,63 @@
 
 @import "{{ site.theme }}";
 :root {
-  --cayman-primary: #9e7cc1;
+  --lavender-main: #9e7cc1;  /* Soft lavender */
+  --lavender-dark: #7a5fa3;  /* Hover shade */
+  --lavender-light-bg: #f6f1fa; /* Page background */
 }
 
+/* Page background */
 body {
-  background-color: #f6f1fa !important;
+  background-color: var(--lavender-light-bg) !important;
 }
 
+/* ----------------------
+   HEADER OVERRIDE
+   Remove Cayman gradient
+   ---------------------- */
 .page-header {
-  background-color: #9e7cc1 !important;
+  background: var(--lavender-main) !important;   /* solid lavender */
+  background-image: none !important;             /* remove green/blue gradient */
+  color: white !important;
+  padding: 3rem 1rem !important;
+  border-bottom: none !important;
+}
+
+.page-header .project-name,
+.page-header .project-tagline {
   color: white !important;
 }
 
+/* ----------------------
+   LINKS
+   ---------------------- */
 a {
-  color: #9e7cc1 !important;
+  color: var(--lavender-main) !important;
+  text-decoration: none;
 }
 
+a:hover {
+  color: var(--lavender-dark) !important;
+}
+
+/* ----------------------
+   FOOTER
+   ---------------------- */
 footer {
-  background-color: #9e7cc1 !important;
+  background-color: var(--lavender-main) !important;
   color: white !important;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: none !important;
+}
+
+/* ----------------------
+   CONTENT CARD STYLE
+   ---------------------- */
+.page-content {
+  background: white !important;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
