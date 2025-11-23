@@ -11,13 +11,19 @@ title: Welcome Page
   </header>
 
   <!-- About Me Section -->
-  <section style="text-align: center; margin-bottom: 3rem;">
-    <h2>About Me</h2>
-    <img src="{{ '/assets/images/ProfilePicture.jpeg' | relative_url }}" 
-         alt="Marisa Varela" 
-         style="width:200px; height:auto; border-radius:50%; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-top: 1rem;">
-    <p style="margin-top: 1rem;">About Section</p>
-  </section>
+<section style="text-align: center; margin-bottom: 3rem;">
+  <img src="{{ '/assets/images/ProfilePicture.jpeg' | relative_url }}" 
+       alt="Marisa Varela" 
+       style="
+         width: 220px;
+         height: 220px;  
+         object-fit: cover;     
+         border-radius: 50%;   
+         box-shadow: 0 0 12px rgba(0,0,0,0.25);
+         margin-top: 1rem;
+       ">
+  <p style="margin-top: 1rem;">About Section</p>
+</section>
 
   <!-- Resume Section -->
   <section style="text-align: center; margin-bottom: 4rem;">
