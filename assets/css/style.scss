@@ -27,25 +27,29 @@ body {
    HEADER — SOFTENED GRADIENT
    ========================== */
 .page-header {
-  background: linear-gradient(135deg, #d9bfff, #ffc6de) !important; /* lighter pastel gradient */
-  color: var(--header-text) !important;
-  border-bottom: none !important;
-  padding: 3rem 1rem !important; /* slightly less tall */
-  text-align: center;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow for depth */
+    background: linear-gradient(135deg, #d6bfff, #ffccd9);
+    color: #9e7cc1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Header text */
-.page-header h1,
-.page-header .project-name,
-.page-header .project-tagline,
-header h1 {
-  color: #9e7cc1 !important; /* softer lavender text instead of deep */
-  margin: 0;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.05); /* very subtle text shadow for readability */
+.page-header h1 {
+    color: #9e7cc1;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
 }
+
+.page-header .project-tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #f0e7ff;
+}
+
 /* ==========================
    SECTION HEADERS (h2)
    ========================== */
