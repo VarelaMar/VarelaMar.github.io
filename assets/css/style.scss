@@ -24,24 +24,28 @@ body {
 }
 
 /* ==========================
-   HEADER — GRADIENT
+   HEADER — SOFTENED GRADIENT
    ========================== */
 .page-header {
-  background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink)) !important;
+  background: linear-gradient(135deg, #d9bfff, #ffc6de) !important; /* lighter pastel gradient */
   color: var(--header-text) !important;
   border-bottom: none !important;
-  padding: 3.5rem 1rem !important;
+  padding: 3rem 1rem !important; /* slightly less tall */
   text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow for depth */
 }
 
+/* Header text */
 .page-header h1,
 .page-header .project-name,
 .page-header .project-tagline,
 header h1 {
-  color: #7a5fa3 !important; /* deep lavender, same as h2 */
+  color: #9e7cc1 !important; /* softer lavender text instead of deep */
   margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05); /* very subtle text shadow for readability */
 }
-
 /* ==========================
    SECTION HEADERS (h2)
    ========================== */
