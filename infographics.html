@@ -7,19 +7,46 @@ title: Infographics
 
   <!-- Page Header -->
   <header style="text-align: center; margin-bottom: 2rem;">
-    <h1>PAGE TITLE HERE</h1>
-    <p><em>Brief description of what this page will showcase</em></p>
+    <h1>Infographics</h1>
+    <p><em>Discrtiption of page/em></p>
   </header>
 
   <!-- Navigation Breadcrumb -->
   <nav style="margin-bottom: 2rem;">
     <a href="{{ '/' | relative_url }}">Home</a> &rarr;
-    <strong>PAGE TITLE HERE</strong>
+    <strong>Infographics</strong>
   </nav>
 
-  <!-- Page Content -->
-  <section>
-    <p>This is a placeholder for content.</p>
+  <!-- Infographic Section -->
+  <section style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 2.5rem;">
+
+    <!--First image-->
+    <div style="text-align: center; width: 100%;">
+      <img 
+        src="{{ 'assets/images/FEMADocPage1.png' | relative_url }}" 
+        alt="Infographic Page 1" 
+        style="width: 100%; max-width: 800px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
+      <p style="margin-top: 0.8rem;">Description</p>
+    </div>
+
+    <!--Second image -->
+    <div style="text-align: center; width: 100%;">
+      <img 
+        src="{{ '/assets/images/FEMADocPage2.png' | relative_url }}" 
+        alt="Infographic Page 2" 
+        style="width: 100%; max-width: 800px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
+      <p style="margin-top: 0.8rem;">Description</p>
+    </div>
+
+    <!--Third image-->
+    <div style="text-align: center; width: 100%;">
+      <img 
+        src="{{ 'assets/images/IMG_8395.PNG' | relative_url }}" 
+        alt="Infographic Page 3" 
+        style="width: 100%; max-width: 800px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
+      <p style="margin-top: 0.8rem;">Description</p>
+    </div>
+
   </section>
 
   <!-- Footer -->
