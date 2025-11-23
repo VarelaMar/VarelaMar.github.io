@@ -20,22 +20,22 @@ title: Infographics
   <!-- Infographic Section -->
   <section style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 2.5rem;">
 
-    <!--First image-->
+     <!-- Two-page document side by side -->
     <div style="text-align: center; width: 100%;">
-      <img 
-        src="{{ 'assets/images/FEMADocPage1.png' | relative_url }}" 
-        alt="Infographic Page 1" 
-        style="width: 100%; max-width: 800px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
-      <p style="margin-top: 0.8rem;">Description</p>
-    </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <img 
+          src="{{ 'assets/images/FEMADocPage1.png | relative_url }}" 
+          alt="Infographic Page 1" 
+          style="width: 100%; max-width: 395px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
 
-    <!--Second image -->
-    <div style="text-align: center; width: 100%;">
-      <img 
-        src="{{ '/assets/images/FEMADocPage2.png' | relative_url }}" 
-        alt="Infographic Page 2" 
-        style="width: 100%; max-width: 800px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
-      <p style="margin-top: 0.8rem;">Description</p>
+        <img 
+          src="{{ 'assets/images/FEMADocPage2.png' | relative_url }}" 
+          alt="Infographic Page 2" 
+          style="width: 100%; max-width: 395px; box-shadow: 0 0 12px rgba(0,0,0,0.2); border-radius: 8px;">
+      </div>
+      <p style="margin-top: 0.8rem; max-width: 800px;">
+        Description
+      </p>
     </div>
 
     <!--Third image-->
