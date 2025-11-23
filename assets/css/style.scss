@@ -84,23 +84,24 @@ hr {
 /* ==========================
    FOOTER — TRANSLUCENT INCLUDING GITHUB GENERATOR LINE
    ========================== */
-footer,
-.site-generator {
-  background: linear-gradient(135deg, #c7a6ff, #ffb7d5) !important; /* same as header */
-  color: #ffffff !important; /* white text for contrast */
-  text-align: center;
-  padding: 1.5rem 0;
-  backdrop-filter: blur(4px);  /* subtle glass effect */
-  margin: 0;
-  border-top: none !important;
+/* --- Links in Footer --- */
+.site-footer a, footer a {
+    color: #f0e7ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Generator line links */
-.site-generator a {
-  color: #ffffff !important;
-  text-decoration: underline;
+.site-footer a:hover, footer a:hover {
+    color: #fff;
 }
 
-.site-generator a:hover {
-  color: #ffd1f0 !important; /* lighter pink on hover */
+/* --- Responsive tweaks --- */
+@media (max-width: 768px) {
+    .site-header .site-title {
+        font-size: 1.8rem;
+    }
+
+    .page-content {
+        padding: 1.5rem;
+    }
 }
