@@ -86,26 +86,23 @@ hr {
 }
 
 /* ==========================
-   FOOTER — TRANSLUCENT INCLUDING GITHUB GENERATOR LINE
+   SOFT GRADIENT FOOTER
    ========================== */
-/* --- Links in Footer --- */
-.site-footer a, footer a {
-    color: #f0e7ff;
+.page-footer {
+    background: linear-gradient(135deg, #d9bfff, #ffc6de); /* same as header */
+    color: #9e7cc1; /* soft lavender text */
+    text-align: center;
+    padding: 0.6rem 1rem; /* small, subtle footer */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 0.8rem;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.05); /* subtle top shadow for depth */
+}
+.page-footer a {
+    color: #9e7cc1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-.site-footer a:hover, footer a:hover {
-    color: #fff;
-}
-
-/* --- Responsive tweaks --- */
-@media (max-width: 768px) {
-    .site-header .site-title {
-        font-size: 1.8rem;
-    }
-
-    .page-content {
-        padding: 1.5rem;
-    }
+.page-footer a:hover {
+    color: #7a5fa3;
 }
